@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-code"></i> Carsten Meyer</div>
+            <ul class="nav-links">
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero-Sektion -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, ich bin <span class="highlight">Carsten Meyer</span></h1>
+            <h2>Cloud & Software Developer</h2>
+            <p>Ich entwickle moderne Cloud- und Web-Lösungen mit einer Leidenschaft für Technologie und Innovation.</p>
+            <a href="#projects" class="btn">Meine Projekte ansehen</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/user.png" alt="Carsten Meyer" onerror="this.style.border='2px solid red'; alert('Bild konnte nicht geladen werden! Überprüfe den Pfad.')">
+        </div>
+        
+    </section>
+
+    <!-- Über mich Sektion -->
+    <section class="about" id="about">
+        <h2>Über mich</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige mich intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
+                <p>Neben meinem Wissen in Webtechnologien wie HTML, CSS und JavaScript, lerne ich kontinuierlich neue Cloud-Konzepte und Best Practices kennen. Mein Ziel ist es, mein Wissen weiter auszubauen und mich langfristig auf eine Cloud-Spezialisierung zu fokussieren.</p>
+            </div>
+            
+            <div class="about-skills">
+                <h3>Meine Skills:</h3>
+                <ul>
+                    <li><i class="fas fa-cloud"></i> Cloud Computing (AWS-Grundlagen)</li>
+                    <li><i class="fas fa-code"></i> Webentwicklung (HTML, CSS, JavaScript)</li>
+                    <li><i class="fas fa-database"></i> SQL-Datenbanken</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Projekte Sektion -->
+    <section class="projects" id="projects">
+        <h2>Meine Projekte</h2>
+        <div class="projects-container">
+            
+            <!-- Portfolio-Website -->
+            <div class="project-card">
+                <h3>Portfolio-Website</h3>
+                <p>Meine persönliche Portfolio-Website, um meine Skills und Projekte zu präsentieren.</p>
+                <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn" target="_blank">Zum Projekt</a>
+            </div>
+
+            <!-- Platzhalter für zukünftiges Cloud-Projekt -->
+            <div class="project-card">
+                <h3>Cloud-Projekt (Coming Soon)</h3>
+                <p>Hier wird bald ein Projekt erscheinen, das Cloud-Technologien nutzt.</p>
+                <p><strong>Technologien:</strong> AWS (geplant)</p>
+                <a href="#" class="btn disabled">In Arbeit</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
