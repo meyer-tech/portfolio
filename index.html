@@ -11,23 +11,28 @@
 <body>
     
     <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo"><i class="fas fa-code"></i> Carsten Meyer</div>
-            <ul class="nav-links">
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-cloud"></i>Carsten</div>
+        <ul class="nav-links">
+            <li><a href="#about" class="menu-link">Über mich</a></li>
+            <li><a href="#skills" class="menu-link">Fähigkeiten</a></li>
+            <li><a href="#projects" class="menu-link">Portfolio</a></li>
+            <li><a href="#contact" class="menu-link">Kontakt</a></li>
+        </ul>
+        <div class="hamburger-menu" onclick="toggleMenu(); this.classList.toggle('open')">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
 
     <!-- Hero-Sektion -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, ich bin <span class="highlight">Carsten Meyer</span></h1>
-            <h2>Cloud & Software Developer</h2>
+            <h1 class="welcome-text">Hi, ich bin Carsten</h1>
+            <h2>Cloud & Software Entwickler</h2>
             <p>Ich entwickle moderne Cloud- und Web-Lösungen mit einer Leidenschaft für Technologie und Innovation.</p>
             <a href="#projects" class="btn">Meine Projekte ansehen</a>
         </div>
@@ -38,66 +43,128 @@
     </section>
 
     <!-- Über mich Sektion -->
-    <section class="about" id="about">
+    <section class="about section-box" id="about">
         <h2>Über mich</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige mich intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
+                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige mich derzeit intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
                 <p>Neben meinem Wissen in Webtechnologien wie HTML, CSS und JavaScript, lerne ich kontinuierlich neue Cloud-Konzepte und Best Practices kennen. Mein Ziel ist es, mein Wissen weiter auszubauen und mich langfristig auf eine Cloud-Spezialisierung zu fokussieren.</p>
             </div>
-            
-            <div class="about-skills">
-                <h3>Meine Skills:</h3>
-                <ul>
-                    <li><i class="fas fa-cloud"></i> Cloud Computing (AWS-Grundlagen)</li>
-                    <li><i class="fas fa-code"></i> Webentwicklung (HTML, CSS, JavaScript)</li>
-                    <li><i class="fas fa-database"></i> SQL-Datenbanken</li>
-                </ul>
-            </div>
-            
-        </div>
     </section>
+
+    <!-- Skills Sektion -->
+    <section class="skills-projects">
+        <section class="skills section-box" id="skills">
+            <h2>Meine Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS Cloud Grundlagen</h3>
+                    <p>Cloud Computing mit AWS-Diensten wie S3, EC2 & IAM.</p>
+                </div>
+                
+                <div class="skill-box">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Strukturierte & moderne Webentwicklung mit CSS Grid & Flexbox.</p>
+                </div>
+
+                <div class="skill-box">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interaktive Webseiten mit Vanilla JS & Grundlagen React.</p>
+                </div>
+
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL-Datenbanken</h3>
+                    <p>Datenbankabfragen & Strukturierung mit relationalen Datenbanken.</p>
+                </div>
+            </div>
+        </section>
 
     <!-- Projekte Sektion -->
-    <section class="projects" id="projects">
-        <h2>Meine Projekte</h2>
-        <div class="projects-container">
-            
-            <!-- Portfolio-Website -->
-            <div class="project-card">
-                <h3>Portfolio-Website</h3>
-                <p>Meine persönliche Portfolio-Website, um meine Skills und Projekte zu präsentieren.</p>
-                <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
-                <a href="https://cmeyer86.github.io/portfolio/" class="btn" target="_blank">Zum Projekt</a>
-            </div>
+        <section class="projects section-box" id="projects">
+            <h2>Meine Projekte</h2>
+            <div class="projects-container">
+                
+                <!-- Portfolio-Website -->
+                <div class="project-card">
+                    <h3>Portfolio-Website</h3>
+                    <p>Meine persönliche Portfolio-Website, um meine Skills und Projekte zu präsentieren.</p>
+                    <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://cmeyer86.github.io/portfolio/" class="btn" target="_blank">Zum Projekt</a>
+                </div>
 
-            <!-- Platzhalter für zukünftiges Cloud-Projekt -->
-            <div class="project-card">
-                <h3>Cloud-Projekt (Coming Soon)</h3>
-                <p>Hier wird bald ein Projekt erscheinen, das Cloud-Technologien nutzt.</p>
-                <p><strong>Technologien:</strong> AWS (geplant)</p>
-                <a href="#" class="btn disabled">In Arbeit</a>
-            </div>
+                <!-- Platzhalter für zukünftiges Cloud-Projekt -->
+                <div class="project-card">
+                    <h3>Cloud-Projekt (Coming Soon)</h3>
+                    <p>Hier wird bald ein Projekt erscheinen, das Cloud-Technologien nutzt.</p>
+                    <p><strong>Technologien:</strong> AWS (geplant)</p>
+                    <a href="#" class="btn disabled">In Arbeit</a>
+                </div>
 
-        </div>
+            </div>
+        </section>
     </section>
-
     <!-- Kontakt Sektion -->
     <section class="contact" id="contact">
         <h2>Kontakt</h2>
-        <p>Du möchtest mich kontaktieren? Hier sind meine wichtigsten Links:</p>
-        
-        <div class="contact-links">
-            <a href="c.meyer1186@gmail.com" target="_blank">
-                <i class="fas fa-envelope"></i> E-Mail
-            </a>
-            <a href="https://www.linkedin.com/in/carsten-meyer1986/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/CMeyer86" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
+        <div class="contact-container">
+            <!-- Linke Seite: Kontaktinfos und Social Media -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:c.meyer1186@gmail.com">c.meyer1186@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><a href="tel:+491737498181">+49 173 7498181</a></p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/carsten-meyer1986/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/CMeyer86" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Download Button -->
+                <a href="files/Carsten_Meyer_CV.pdf" class="btn" download>Lebenslauf herunterladen</a>
+            </div>
+
+            <!-- Rechte Seite: Formular -->
+            <div class="contact-form">
+                <form action="your-form-handler" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- Footer Sektion -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Carsten Meyer. Alle Rechte vorbehalten.</p>
+            <a href="#top" class="scroll-to-top">Zum Anfang</a>
+        </div>
+    </footer>
 </body>
 </html>
