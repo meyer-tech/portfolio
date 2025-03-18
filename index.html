@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Navbar -->
-<header>
-    <nav class="navbar">
-        <div class="logo"><i class="fas fa-cloud"></i>Carsten</div>
-        <ul class="nav-links">
-            <li><a href="#about" class="menu-link">Über mich</a></li>
-            <li><a href="#skills" class="menu-link">Fähigkeiten</a></li>
-            <li><a href="#projects" class="menu-link">Portfolio</a></li>
-            <li><a href="#contact" class="menu-link">Kontakt</a></li>
-        </ul>
-        <div class="hamburger-menu" onclick="toggleMenu(); this.classList.toggle('open')">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-cloud"></i>Carsten</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="menu-link">Über mich</a></li>
+                <li><a href="#skills" class="menu-link">Fähigkeiten</a></li>
+                <li><a href="#projects" class="menu-link">Portfolio</a></li>
+                <li><a href="#contact" class="menu-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu(); this.classList.toggle('open')">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero-Sektion -->
     <section class="hero">
@@ -37,9 +39,10 @@
             <a href="#projects" class="btn">Meine Projekte ansehen</a>
         </div>
         <div class="hero-image">
-            <img src="images/user.png" alt="Carsten Meyer" onerror="this.style.border='2px solid red'; alert('Bild konnte nicht geladen werden! Überprüfe den Pfad.')">
+            <img src="images/user.png" alt="Carsten Meyer"
+                onerror="this.style.border='2px solid red'; alert('Bild konnte nicht geladen werden! Überprüfe den Pfad.')">
         </div>
-        
+
     </section>
 
     <!-- Über mich Sektion -->
@@ -47,8 +50,12 @@
         <h2>Über mich</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige mich derzeit intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
-                <p>Neben meinem Wissen in Webtechnologien wie HTML, CSS und JavaScript, lerne ich kontinuierlich neue Cloud-Konzepte und Best Practices kennen. Mein Ziel ist es, mein Wissen weiter auszubauen und mich langfristig auf eine Cloud-Spezialisierung zu fokussieren.</p>
+                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige
+                    mich derzeit intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine
+                    Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
+                <p>Neben meinem Wissen in Webtechnologien wie HTML, CSS und JavaScript, lerne ich kontinuierlich neue
+                    Cloud-Konzepte und Best Practices kennen. Mein Ziel ist es, mein Wissen weiter auszubauen und mich
+                    langfristig auf eine Cloud-Spezialisierung zu fokussieren.</p>
             </div>
     </section>
 
@@ -62,7 +69,7 @@
                     <h3>AWS Cloud Grundlagen</h3>
                     <p>Cloud Computing mit AWS-Diensten wie S3, EC2 & IAM.</p>
                 </div>
-                
+
                 <div class="skill-box">
                     <i class="fab fa-html5"></i>
                     <h3>HTML & CSS</h3>
@@ -83,17 +90,17 @@
             </div>
         </section>
 
-    <!-- Projekte Sektion -->
+        <!-- Projekte Sektion -->
         <section class="projects section-box" id="projects">
             <h2>Meine Projekte</h2>
             <div class="projects-container">
-                
+
                 <!-- Portfolio-Website -->
                 <div class="project-card">
                     <h3>Portfolio-Website</h3>
                     <p>Meine persönliche Portfolio-Website, um meine Skills und Projekte zu präsentieren.</p>
                     <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://cmeyer86.github.io/portfolio/" class="btn" target="_blank">Zum Projekt</a>
+                    <a href="https://meyer-tech.github.io/portfolio/" class="btn" target="_blank">Zum Projekt</a>
                 </div>
 
                 <!-- Platzhalter für zukünftiges Cloud-Projekt -->
@@ -121,12 +128,12 @@
                     <i class="fas fa-phone-alt"></i>
                     <p><a href="tel:+491737498181">+49 173 7498181</a></p>
                 </div>
-                
+
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/carsten-meyer1986/" target="_blank">
+                    <a href="https://www.linkedin.com/in/carsten-meyer-tech/" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/CMeyer86" target="_blank">
+                    <a href="https://github.com/meyer-tech" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.facebook.com/yourprofile" target="_blank">
@@ -167,4 +174,5 @@
         </div>
     </footer>
 </body>
+
 </html>
