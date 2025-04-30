@@ -13,4 +13,4 @@ Erstellt mit **HTML, CSS und JavaScript**.
 - **Cloud (geplant):** AWS-Grundlagen  
 
 ## 🔗 Live-Demo:
-👉 [Hier klicken](https://dein-nutzername.github.io/portfolio/)
+👉 [Hier klicken](https://meyer-tech.github.io/portfolio/)
