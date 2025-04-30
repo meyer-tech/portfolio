@@ -1,13 +1,38 @@
 /* Active Link */
 const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('section[id]');
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
-// Aktiver Link
+// Scroll Active Link
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute('id');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav__link[href*=' + sectionId + ']')?.classList.add('active-link');
+    } else {
+      document.querySelector('.nav__link[href*=' + sectionId + ']')?.classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+// Aktiver Link beim Klicken
 function setActiveLink() {
   navLinks.forEach(link => link.classList.remove('active-link'));
   this.classList.add('active-link');
+
+  // Schließe das Menü nach dem Klicken
+  if (navMenu.classList.contains('show-menu')) {
+    navMenu.classList.remove('show-menu');
+  }
 }
 
 navLinks.forEach(link => link.addEventListener('click', setActiveLink));
