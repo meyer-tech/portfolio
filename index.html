@@ -2,177 +2,369 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Mein Portfolio</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Über mich</a></li>
+          <li><a href="#skills" class="nav__link">Fähigkeiten</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="#blog" class="nav__link">Blog</a></li>
+          <li><a href="#contact" class="nav__link">Kontakt</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="ri-close-fill"></i></div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-fill"></i></div>
+    </nav>
+  </header>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo"><i class="fas fa-cloud"></i>Carsten</div>
-            <ul class="nav-links">
-                <li><a href="#about" class="menu-link">Über mich</a></li>
-                <li><a href="#skills" class="menu-link">Fähigkeiten</a></li>
-                <li><a href="#projects" class="menu-link">Portfolio</a></li>
-                <li><a href="#contact" class="menu-link">Kontakt</a></li>
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__container container grid">
+        <img src="images/profile.png" alt="" class="hero__img">
+        <div class="hero__data">
+          <h1 class="hero__name">Carsten Meyer_</h1>
+          <p class="hero__work">Fachinformatiker (AE) & AWS Cloud Practitioner</p>
+          <dl class="hero__list">
+            <dt>ALTER:</dt>
+            <dd>38</dd>
+            <dt>TELEFON:</dt>
+            <dd>+49 1737498181</dd>
+            <dt>EMAIL:</dt>
+            <dd>c.meyer1186@gmail.com</dd>
+            <dt>ADDRESSE:</dt>
+            <dd>Am Siebrassenhof 65, 33605 Bielefeld</dd>
+          </dl>
+          <div class="hero__socials">
+            <a href="https://github.com/meyer-tech" target="_blank" class="hero__social-link"><i
+                class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/carsten-meyer-tech/" target="_blank" class="hero__social-link"><i
+                class="ri-linkedin-box-fill"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="hero__social-link"><i
+                class="ri-facebook-box-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="hello section container">
+      <h2 class="section__title">Hi_</h2>
+      <p class="hello__details text-lg">
+        Ich bin Fachinformatiker für Anwendungsentwicklung mit starkem Interesse an modernen Cloud-Lösungen und dem
+        klaren Ziel, im Bereich Cloud Engineering und DevOps Fuß zu fassen.
+        Derzeit vertiefe ich mein Wissen in den Grundlagen von Cloud-Infrastrukturen und arbeite aktiv mit zentralen
+        Services wie EC2, S3, VPC, IAM, Lambda und CloudFront auf Practitioner-Niveau. Parallel beschäftige ich mich mit
+        DevOps-Praktiken wie Docker, Kubernetes und Terraform als nächste Schritte auf meinem Lernweg.
+        Selbstständiger und schneller Lerner mit hoher Eigenmotivation und Begeisterung für neue Technologien, solide
+        Grundlagen in Linux, Python und Scripting, zielstrebig, teamfähig und fokussiert auf Cloud-native Technologien.
+      </p>
+      <a href="files/Carsten_Meyer_CV.pdf" class="button button--flex text-sm"><i class="ri-download-line"></i>
+        Lebenslauf
+        herunterladen</a>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section container" id="skills">
+      <h2 class="section__title">Fähigkeiten_</h2>
+      <div class="skills__container grid">
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-cloud-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">AWS CLOUD</h3>
+          <p class="skills__detail">
+            Zertifizierter AWS Cloud Practitioner, <br>
+            Cloud Computing mit AWS-Diensten wie S3, EC2, Lambda, CloudFront, Route 53, VPC & IAM
+          </p>
+        </div>
+
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-code-box-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">WEB ENTWICKLUNG</h3>
+          <p class="skills__detail">
+            Strukturierte & moderne Umsetzung von Webseiten mit HTML, CSS Grid & Flexbox sowie grundlegender Einsatz von
+            JavaScript.
+          </p>
+        </div>
+
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-terminal-box-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">LINUX, BASH & SHELL-SCRIPTING</h3>
+          <p class="skills__detail">
+            Grundlagen in Linux und Bash zur sicheren Arbeit mit der Kommandozeile, Systemnavigation und einfachen
+            Automatisierungsaufgaben.
+          </p>
+        </div>
+
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-code-s-slash-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">PYTHON</h3>
+          <p class="skills__detail">
+            Aktuell vertiefe ich meine Kenntnisse in Python im Rahmen eines umfassenden Kurses. Ich beherrsche die
+            Grundlagen der Sprache und setze Python gezielt für strukturierte, automatisierbare Abläufe sowie erste
+            Skripting-Aufgaben ein.
+          </p>
+        </div>
+
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-settings-3-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">DEVOPS - AKTUELL IN WEITERBILDUNG</h3>
+          <p class="skills__detail">
+            Aktuell baue ich grundlegende Kenntnisse im Bereich DevOps auf. Ich beschäftige mich dabei mit Tools und
+            Prozessen wie Jenkins, GitHub Actions, Ansible, Docker, Kubernetes und Terraform, um ein besseres
+            Verständnis für automatisierte Infrastruktur, CI/CD und moderne Deployment-Workflows zu entwickeln.
+          </p>
+        </div>
+
+        <div class="skills__item">
+          <div class="icon__box">
+            <i class="ri-database-2-fill skills__icon"></i>
+            <div class="skills__dot"><span class="dot"></span></div>
+          </div>
+          <h3 class="skills__title text-lg">DATENBANKEN</h3>
+          <p class="skills__detail">
+            Grundlagen im Umgang mit relationalen Datenbanken und SQL sowie erste Berührungspunkte mit der Verwaltung
+            und Bereitstellung von Datenbankinstanzen über Amazon RDS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="work section container" id="portfolio">
+      <h2 class="section__title">Portfolio_</h2>
+      <div class="project__categories">
+        <button class="category__btn text-xs active-work" data-filter="all">ALLE</button>
+        <button class="category__btn text-xs" data-filter=".web">WEBSEITEN</button>
+        <button class="category__btn text-xs" data-filter=".cloud">CLOUD DEPLOYMENTS</button>
+      </div>
+
+      <div class="projects__container grid">
+        <div class="project__item grid mix web">
+          <img src="images/project1.png" alt="Portfolio Website" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">PORTFOLIO-WEBSEITE</h3>
+            <p class="project__description">Meine persönliche Portfolio-Website, um meine Skills und Projekte zu
+              präsentieren.</p>
+            <h4 class="project__stack text-xs">Eingesetzter Tech-Stack:</h4>
+            <ul class="tags text-sm">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
             </ul>
-            <div class="hamburger-menu" onclick="toggleMenu(); this.classList.toggle('open')">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero-Sektion -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="welcome-text">Hi, ich bin Carsten</h1>
-            <h2>Cloud & Software Entwickler</h2>
-            <p>Ich entwickle moderne Cloud- und Web-Lösungen mit einer Leidenschaft für Technologie und Innovation.</p>
-            <a href="#projects" class="btn">Meine Projekte ansehen</a>
+            <a href="" class="project__link text-sm">www.carstenmeyer.dev</a>
+          </div>
         </div>
-        <div class="hero-image">
-            <img src="images/user.png" alt="Carsten Meyer"
-                onerror="this.style.border='2px solid red'; alert('Bild konnte nicht geladen werden! Überprüfe den Pfad.')">
+        <div class="project__item grid mix cloud">
+          <img src="images/project2.png" alt="AWS CLOUD DEPLOYMENT" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">AWS CLOUD DEPLOYMENT</h3>
+            <p class="project__description">Bereitstellung einer statischen Website auf AWS mit S3, CloudFront und Route
+              53 für optimale Performance und Verfügbarkeit.</p>
+            <h4 class="project__stack text-xs">Eingesetzter Tech-Stack:</h4>
+            <ul class="tags text-sm">
+              <li>AWS</li>
+              <li>S3</li>
+              <li>CloudFront</li>
+              <li>Route 53</li>
+              <li>ACM</li>
+            </ul>
+            <a href="" class="project__link text-sm"></a>
+          </div>
+        </div>
+        <div class="project__item grid mix web">
+          <div class="coming-soon project__img"></div>
+          <div class="project__data">
+            <h3 class="project__title text-lg">FERIENHAUS SCHWEDEN (in Arbeit)</h3>
+            <p class="project__description">Reale Website für ein Ferienhaus in Schweden, um Lage, Ausstattung und
+              regionale Highlights übersichtlich darzustellen.</p>
+            <h4 class="project__stack text-xs">Eingesetzter Tech-Stack:</h4>
+            <ul class="tags text-sm">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="" class="project__link text-sm"></a>
+          </div>
         </div>
 
+        <!--- Platzhalter
+        <div class="project__item grid mix cloud">
+          <div class="coming-soon project__img"></div>
+          <div class="project__data">
+            <h3 class="project__title text-lg">ADMIN TEMPLATE FOR PHOTO SERVICE</h3>
+            <p class="project__description">Do answered bachelor occasion in of offended no concerns. Supply worthy
+              warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these
+              smart rooms ham.</p>
+            <h4 class="project__stack text-xs">Eingesetzter Tech-Stack:</h4>
+            <ul class="tags text-sm">
+              <li>html5</li>
+              <li>css3</li>
+              <li>JavaScript</li>
+              <li>BEM</li>
+              <li>bower</li>
+              <li>grunt</li>
+            </ul>
+            <a href="" class="project__link text-sm">www.superapp.com</a>
+          </div>
+        </div>
+      -->
+      </div>
     </section>
 
-    <!-- Über mich Sektion -->
-    <section class="about section-box" id="about">
-        <h2>Über mich</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Ich habe eine Ausbildung als Fachinformatiker für Anwendungsentwicklung abgeschlossen und beschäftige
-                    mich derzeit intensiv mit Cloud-Technologien. Besonders interessiert mich AWS, wo ich derzeit meine
-                    Kenntnisse ausbaue, um mich langfristig im Cloud-Bereich weiterzuentwickeln.</p>
-                <p>Neben meinem Wissen in Webtechnologien wie HTML, CSS und JavaScript, lerne ich kontinuierlich neue
-                    Cloud-Konzepte und Best Practices kennen. Mein Ziel ist es, mein Wissen weiter auszubauen und mich
-                    langfristig auf eine Cloud-Spezialisierung zu fokussieren.</p>
+    <!-- Blog Section -->
+    <section class="blog section container" id="blog">
+      <h2 class="section__title">Letzte Beiträge_</h2>
+      <div class="blog__navigation">
+        <button class="blog__nav-btn blog__nav-prev" aria-label="Vorheriger Beitrag">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <div class="posts__container grid">
+          <div class="post__card">
+            <img src="images/blog2.png" alt="AWS Statische Website" class="post__img">
+            <div class="post__content">
+              <p class="post__date text-xs">24. April 2025</p>
+              <h3 class="post__title text-sm">AWS Statische Website</h3>
+              <p class="post__description text-sm">
+                Schritt-für-Schritt Anleitung zur Bereitstellung einer statischen Website auf AWS.
+                Verwendung von S3, CloudFront und Route 53 für optimale Performance.
+              </p>
+              <div class="post__tags">
+                <span class="tag">AWS</span>
+                <span class="tag">S3</span>
+                <span class="tag">CloudFront</span>
+              </div>
             </div>
-    </section>
-
-    <!-- Skills Sektion -->
-    <section class="skills-projects">
-        <section class="skills section-box" id="skills">
-            <h2>Meine Skills</h2>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <i class="fab fa-aws"></i>
-                    <h3>AWS Cloud Grundlagen</h3>
-                    <p>Cloud Computing mit AWS-Diensten wie S3, EC2 & IAM.</p>
-                </div>
-
-                <div class="skill-box">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML & CSS</h3>
-                    <p>Strukturierte & moderne Webentwicklung mit CSS Grid & Flexbox.</p>
-                </div>
-
-                <div class="skill-box">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>Interaktive Webseiten mit Vanilla JS & Grundlagen React.</p>
-                </div>
-
-                <div class="skill-box">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL-Datenbanken</h3>
-                    <p>Datenbankabfragen & Strukturierung mit relationalen Datenbanken.</p>
-                </div>
+          </div>
+          <div class="post__card">
+            <img src="images/blog1.png" alt="Portfolio Website" class="post__img">
+            <div class="post__content">
+              <p class="post__date text-xs">04. März 2025</p>
+              <h3 class="post__title text-sm">Portfolio Website</h3>
+              <p class="post__description text-sm">
+                Erfahren Sie, wie ich meine Portfolio-Website entwickelt habe, von der Konzeption bis zur
+                Implementierung.
+                Ein Einblick in die verwendeten Technologien und Design-Entscheidungen.
+              </p>
+              <div class="post__tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Projekte Sektion -->
-        <section class="projects section-box" id="projects">
-            <h2>Meine Projekte</h2>
-            <div class="projects-container">
-
-                <!-- Portfolio-Website -->
-                <div class="project-card">
-                    <h3>Portfolio-Website</h3>
-                    <p>Meine persönliche Portfolio-Website, um meine Skills und Projekte zu präsentieren.</p>
-                    <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://meyer-tech.github.io/portfolio/" class="btn" target="_blank">Zum Projekt</a>
-                </div>
-
-                <!-- Platzhalter für zukünftiges Cloud-Projekt -->
-                <div class="project-card">
-                    <h3>Cloud-Projekt (Coming Soon)</h3>
-                    <p>Hier wird bald ein Projekt erscheinen, das Cloud-Technologien nutzt.</p>
-                    <p><strong>Technologien:</strong> AWS (geplant)</p>
-                    <a href="#" class="btn disabled">In Arbeit</a>
-                </div>
-
+          </div>
+          <!-- Platzhalter Blogbeiträge
+          <div class="post__card">
+            <img src="images/blog-3.png" alt="DevOps Grundlagen" class="post__img">
+            <div class="post__content">
+              <p class="post__date text-xs">15. April 2025</p>
+              <h3 class="post__title text-sm">DevOps Grundlagen</h3>
+              <p class="post__description text-sm">
+                Einführung in die Grundlagen von DevOps.
+                Überblick über wichtige Tools und Praktiken für moderne Softwareentwicklung.
+              </p>
+              <div class="post__tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">Docker</span>
+                <span class="tag">CI/CD</span>
+              </div>
             </div>
-        </section>
-    </section>
-    <!-- Kontakt Sektion -->
-    <section class="contact" id="contact">
-        <h2>Kontakt</h2>
-        <div class="contact-container">
-            <!-- Linke Seite: Kontaktinfos und Social Media -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:c.meyer1186@gmail.com">c.meyer1186@gmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p><a href="tel:+491737498181">+49 173 7498181</a></p>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/carsten-meyer-tech/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/meyer-tech" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/yourprofile" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/yourprofile" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-
-                <!-- Download Button -->
-                <a href="files/Carsten_Meyer_CV.pdf" class="btn" download>Lebenslauf herunterladen</a>
+          </div>
+          <div class="post__card">
+            <img src="images/blog-3.png" alt="DevOps Grundlagen" class="post__img">
+            <div class="post__content">
+              <p class="post__date text-xs">15. April 2025</p>
+              <h3 class="post__title text-sm">DevOps Grundlagen</h3>
+              <p class="post__description text-sm">
+                Einführung in die Grundlagen von DevOps.
+                Überblick über wichtige Tools und Praktiken für moderne Softwareentwicklung.
+              </p>
+              <div class="post__tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">Docker</span>
+                <span class="tag">CI/CD</span>
+              </div>
             </div>
-
-            <!-- Rechte Seite: Formular -->
-            <div class="contact-form">
-                <form action="your-form-handler" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Nachricht:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit" class="btn">Absenden</button>
-                </form>
-            </div>
+          </div>
+          -->
         </div>
+        <button class="blog__nav-btn blog__nav-next" aria-label="Nächster Beitrag">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+      </div>
     </section>
 
-    <!-- Footer Sektion -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Carsten Meyer. Alle Rechte vorbehalten.</p>
-            <a href="#top" class="scroll-to-top">Zum Anfang</a>
+    <!-- Contact Form -->
+    <section class="contact section" id="contact">
+      <div class="contact__content container">
+        <h2 class="section__title">Kontakt aufnehmen_</h2>
+        <div class="contact__container grid">
+          <div class="contact__info">
+            <dl class="contact__list">
+              <dt>Telefon:</dt>
+              <dd><a href="tel:+491737498181" class="contact__link">+49 1737498181</a></dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:c.meyer1186@gmail.com" class="contact__link">c.meyer1186@gmail.com</a></dd>
+            </dl>
+            <ul class="contact__socials">
+              <li><a href="https://www.linkedin.com/in/carsten-meyer-tech/" class="contact__social-link">Linkedin</a>
+              </li>
+              <li><a href="https://github.com/meyer-tech" class="contact__social-link">Github</a></li>
+              <li><a href="https://www.facebook.com/" class="contact__social-link">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="contact__form">
+            <p class="contact__form-title">Oder kontaktiere mich direkt hier_</p>
+            <form action="" id="contact-form">
+              <div class="contact__input-div">
+                <input type="text" name="name" placeholder="Vor- und Nachname" class="contact__input" id="contact-name">
+              </div>
+              <div class="contact__input-div">
+                <input type="email" name="email" placeholder="E-Mail Adresse" class="contact__input" id="contact-email">
+              </div>
+              <div class="contact__input-div">
+                <textarea name="message" placeholder="Nachricht hier eingeben" class="contact__input textarea"
+                  id="message" cols="30" rows="10"></textarea>
+              </div>
+              <p class="contact__message text-sm" id="contact-message"></p>
+              <button type="submit" class="button contact__button">ABSENDEN</button>
+            </form>
+            <p class="footer__copy">&copy; 2025 Carsten Meyer. All Rights Reserved</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- External Scripts -->
+  <script src="mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
